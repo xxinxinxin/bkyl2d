@@ -7,10 +7,10 @@
 		"text": ["猜猜我要说些什么？", "我从青蛙王子那里听到了不少人生经验。"]
 	}, {
 		"selector": "#waifu-tool .fa-paper-plane",
-		"text": ["要不要来玩飞机大战？", "这个按钮上写着「不要点击」。", "怎么，你想来和我玩个游戏？", "听说这样可以蹦迪！"]
+		"text": ["要不要来玩飞机大战？", "这个按钮上写着「不要点击」。", "不要打到我哦", "biubiubiu~"]
 	}, {
 		"selector": "#waifu-tool .fa-user-circle",
-		"text": ["你是不是不爱人家了呀，呜呜呜～", "要见见我的姐姐嘛？", "想要看我妹妹嘛？", "要切换看板娘吗？"]
+		"text": ["你是不是不爱人家了呀，呜呜呜～", "要见见我的姐妹嘛？", "想要看我的姐妹嘛？", "要切换看板娘吗？"]
 	}, {
 		"selector": "#waifu-tool .fa-street-view",
 		"text": ["喜欢换装 PLAY 吗？", "这次要扮演什么呢？", "变装！", "让我们看看接下来会发生什么！"]
@@ -173,6 +173,75 @@
 	}, {
 		"selector": ".vcontent",
 		"text": ["哇，快看看这个精彩评论！", "如果有疑问，请尽快留言哦～"]
+	}, {
+		"selector": "a[href^='/send/lrplrplrp/']",
+		"text": ["要联系主人吗，他人超好的。"]
+	}, {
+		"selector": ".author_avatar",
+		"text": ["这是主人的头像，一只屑猫猫","你问我主人为什么叫lrplrplrp，大概是不想死太多脑细胞吧"]
+	}, {
+		"selector": "a[href='https://www.cnblogs.com/lrplrplrp/']",
+		"text": ["点击这里可以回到主页哦。"]
+	}, {
+		"selector": "a[href='https://www.cnblogs.com/lrplrplrp/p/16736674.html']",
+		"text": ["要给主人留言吗？"]
+	}, {
+		"selector": "a[href='https://www.cnblogs.com/lrplrplrp/p/16735052.html']",
+		"text": ["主人的朋友们人也都很好哦","要见一见主人的朋友吗"]
+	}, {
+		"selector": "a[href='https://i.cnblogs.com/']",
+		"text": ["点击这里可以进入博客园的管理页面"]
+	}, {
+		"selector": "a[href='https://pic.cnblogs.com/face/2977219/20220910081129.png']",
+		"text": ["这是主人的头像，一只屑猫猫","你问我主人为什么叫lrplrplrp，大概是不想死太多脑细胞吧"]
+	}, {
+		"selector": ".buryit",
+		"text": ["（ᗜ ‸ ᗜ）"]
+	}, {
+		"selector": ".diggit",
+		"text": ["(☆▽☆)"]
+	}, {
+		"selector": ".comment_textarea",
+		"text": ["要和主人讨论学术问题吗"]
+	}, {
+		"selector": "#commentbox_opt_sub",
+		"text": ["欢迎订阅(๑•̀ㅂ•́)و✧"]
+	}, {
+		"selector": ".notice_title",
+		"text": ["这里是公告"]
+	}, {
+		"selector": ".vertical-middle",
+		"text": ["点这里可以放歌哦","这里全是主人精心挑选的音乐哦","要放松一下心情吗"]
+	}, {
+		"selector": "a[href='https://www.cnblogs.com/lrplrplrp/gallery.html']",
+		"text": ["要看看<span>{text}</span>吗，点击可以阅读全文哦。"]
+	}, {
+		"selector": "#q",
+		"text": ["迷路了吗，要找点什么呢"]
+	}, {
+		"selector": "#google_q",
+		"text": ["谷歌搜索需要掌握上网诀窍哦"]
+	}, {
+		"selector": "#blog-calendar",
+		"text": ["浮云一别后，流水十年间。"]
+	}, {
+		"selector": ".medium-zoom-image",
+		"text": ["点击图片可以放大哦。"]
+	}, {
+		"selector": "#green_channel_favorite",
+		"text": ["<(￣︶￣)>"]
+	}, {
+		"selector": "#green_channel_digg",
+		"text": ["╰(*°▽°*)╯"]
+	}, {
+		"selector": "#green_channel_follow",
+		"text": ["ヽ(✿ﾟ▽ﾟ)ノ"]
+	}, {
+		"selector": "#green_channel_digg",
+		"text": ["╰(*°▽°*)╯"]
+	}, {
+		"selector": ".cnblogs-toc-button",
+		"text": ["点击这里打开导航目录。"]
 	}],
 	"click": [{
 		"selector": "#live2d",
