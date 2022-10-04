@@ -105,7 +105,7 @@ function loadWidget(config) {
 		let text;
 		if (location.pathname === "/") { // 如果是主页
 			const now = new Date().getHours();
-			if (now > 5 && now <= 7) text = "早上好！一日之计在于晨，美好的一天就要开始了。";
+			if (now > 5 && now <= 7) text = ["早上好！一日之计在于晨，美好的一天就要开始了。","早啊，叫醒你的是理想还是闹钟呢。"];
 			else if (now > 7 && now <= 11) text = "上午好！工作顺利嘛，不要久坐，多起来走动走动哦！";
 			else if (now > 11 && now <= 13) text = "中午了，工作了一个上午，现在是午餐时间！";
 			else if (now > 13 && now <= 17) text = "午后很容易犯困呢，今天的运动目标完成了吗？";
