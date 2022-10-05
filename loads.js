@@ -36,7 +36,7 @@ if (screen.width >= 768) {
 			// apiPath: "https://live2d.fghrsh.net/api/",
 			// cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
 			// cdnPath: "https://live2d-api.vercel.app/"
-			cdnPath: "https://npm.elemecdn.com/akilar-live2dapi@latest/"
+			apiPath: "https://api3.fghrsh.net/live2d/"
 			// cdnPath: "https://gitee.com/ajream/live2d_api/raw/master/"
 		});
 	});
