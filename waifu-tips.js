@@ -103,7 +103,7 @@ function loadWidget(config) {
 
 	(function welcomeMessage() {
 		let text;
-		if (location.pathname === "/") { // 如果是主页
+		if (location.pathname === "/lrplrplrp/") { // 如果是主页
 			const now = new Date().getHours();
 			if (now > 5 && now <= 7) text = ["早上好！一日之计在于晨，美好的一天就要开始了。","早啊，叫醒你的是理想还是闹钟呢。"];
 			else if (now > 7 && now <= 11) text = "上午好！工作顺利嘛，不要久坐，多起来走动走动哦！";
@@ -163,7 +163,7 @@ function loadWidget(config) {
 		if (modelId === null) {
 			// 首次访问加载 指定模型 的 指定材质
 			modelId = 6; // 模型 ID
-			modelTexturesId = 2; // 材质 ID
+			modelTexturesId = 0; // 材质 ID
 		}
 		loadModel(modelId, modelTexturesId);
 		fetch(waifuPath)
