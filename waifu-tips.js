@@ -42,7 +42,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！", "记得把小家加入 Adblock 白名单哦！"];
+		messageArray = ["好久不见，时间过得好快呢……", "逝者如斯，不舍昼夜", "嗨～是在发呆吗", "如果觉得文章有用记得点个赞哦~"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
@@ -81,7 +81,7 @@ function loadWidget(config) {
 		});
 		document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
 			localStorage.setItem("waifu-display", Date.now());
-			showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
+			showMessage(["愿你有一天能与重要的人重逢。","所有离别都是为了更好的重逢。"], 2000, 11);
 			document.getElementById("waifu").style.bottom = "-500px";
 			setTimeout(() => {
 				document.getElementById("waifu").style.display = "none";
@@ -97,7 +97,7 @@ function loadWidget(config) {
 			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
 		});
 		window.addEventListener("visibilitychange", () => {
-			if (!document.hidden) showMessage("哇，你终于回来了～", 6000, 9);
+			if (!document.hidden) showMessage(["哇，你终于回来了～","是想我了吗～"], 6000, 9);
 		});
 	})();
 
