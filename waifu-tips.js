@@ -38,6 +38,16 @@ function loadWidget(config) {
 	function randomSelection(obj) {
 		return Array.isArray(obj) ? obj[Math.floor(Math.random() * obj.length)] : obj;
 	}
+	
+	function switchSelection(obj,id) {
+		if(Array.isArray(obj)){
+			const nid = (++id >= obj.length) ? 0 : id;
+			return obj[nid];
+		}else{
+			return obj;
+		}
+	}
+	
 	// 检测用户活动状态，并在空闲时显示消息
 	let userAction = false,
 		userActionTimer,
@@ -225,7 +235,7 @@ function loadWidget(config) {
 			modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (useCDN) {
 			if (!modelList) await loadModelList();
-			const target = randomSelection(modelList.models[modelId]);
+			const target = switchSelection(modelList.models[modelId],modelTexturesId);
 			loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
 			showMessage("我的新衣服好看嘛？", 4000, 10);
 		} else {
