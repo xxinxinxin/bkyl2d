@@ -105,14 +105,14 @@
 		"selector": ".reward-container",
 		"text": ["我是不是棒棒哒～快给我点赞吧！", "要打赏我嘛？好期待啊～", "主人最近在吃土呢，很辛苦的样子，给他一些钱钱吧～"]
 	}, {
-		"selector": "#wechat",
-		"text": ["这是我的微信二维码～"]
+		"selector": ".icon popper_weixin",
+		"text": ["这是主人的微信二维码，加好友记得备注博客园哦～"]
 	}, {
 		"selector": "#alipay",
 		"text": ["这是我的支付宝哦！"]
 	}, {
-		"selector": "#bitcoin",
-		"text": ["这是我的比特币账号！"]
+		"selector": ".poem-wrap",
+		"text": ["喜欢诗歌吗？","无端好客随春去，送酒吟诗一并愁。"]
 	}, {
 		"selector": "#needsharebutton-postbottom .btn",
 		"text": ["好东西要让更多人知道才行哦。", "觉得文章有帮助的话，可以分享给更多需要的朋友呢。"]
@@ -168,7 +168,7 @@
 		"selector": "#btn_preview_comment",
 		"text": ["要预览一下你的发言吗？", "快看看你的评论有多少负熵！"]
 	}, {
-		"selector": ".vsubmit",
+		"selector": "#btn_comment_submit",
 		"text": ["评论没有审核，要对自己的发言负责哦～", "要提交了吗，请耐心等待回复哦～"]
 	}, {
 		"selector": ".vcontent",
@@ -178,7 +178,7 @@
 		"text": ["要联系主人吗，他人超好的。"]
 	}, {
 		"selector": ".author_avatar",
-		"text": ["这是主人的头像，一只屑猫猫","你问我主人为什么叫lrplrplrp，大概是不想死太多脑细胞吧"]
+		"text": ["这是主人的头像，一只屑猫猫","你问我主人为什么叫lrplrplrp，大概是不想死太多脑细胞吧","我家主人好看吗？", "这是我家主人(*´∇｀*)"]
 	}, {
 		"selector": "a[href='https://www.cnblogs.com/lrplrplrp/']",
 		"text": ["点击这里可以回到主页哦。"]
