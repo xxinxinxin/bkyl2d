@@ -174,7 +174,7 @@
 		"selector": ".vcontent",
 		"text": ["哇，快看看这个精彩评论！", "如果有疑问，请尽快留言哦～"]
 	}, {
-		"selector": "a[href^='/send/lrplrplrp/']",
+		"selector": "a[href^='/send/lrplrplrp']",
 		"text": ["要联系主人吗，他人超好的。"]
 	}, {
 		"selector": ".author_avatar",
@@ -193,7 +193,7 @@
 		"text": ["点击这里可以进入博客园的管理页面"]
 	}, {
 		"selector": "a[href='https://pic.cnblogs.com/face/2977219/20220910081129.png']",
-		"text": ["这是主人的头像，一只屑猫猫","你问我主人为什么叫lrplrplrp，大概是不想死太多脑细胞吧"]
+		"text": ["这是主人的头像，一只屑猫猫","你问我主人为什么叫lrplrplrp，大概是不想在起名上死太多脑细胞吧"]
 	}, {
 		"selector": ".buryit",
 		"text": ["（ᗜ ‸ ᗜ）"]
@@ -210,7 +210,7 @@
 		"selector": ".notice_title",
 		"text": ["这里是公告"]
 	}, {
-		"selector": ".vertical-middle",
+		"selector": "#player",
 		"text": ["点这里可以放歌哦","这里全是主人精心挑选的音乐哦","要放松一下心情吗"]
 	}, {
 		"selector": "a[href='https://www.cnblogs.com/lrplrplrp/gallery.html']",
