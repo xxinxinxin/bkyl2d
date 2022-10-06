@@ -39,15 +39,6 @@ function loadWidget(config) {
 		return Array.isArray(obj) ? obj[Math.floor(Math.random() * obj.length)] : obj;
 	}
 	
-	function switchSelection(obj,id) {
-		if(Array.isArray(obj)){
-			const nid = (++id >= obj.length) ? 0 : id;
-			return obj[nid];
-		}else{
-			return obj;
-		}
-	}
-	
 	function idSelection(obj,id) {
 		return Array.isArray(obj) ? obj[id] : obj;
 	}
@@ -239,12 +230,25 @@ function loadWidget(config) {
 		const modelId = localStorage.getItem("modelId"),
 			modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (useCDN) {
-			if (!modelList) await loadModelList();
-			// 可选 "random"(随机), "switch"(顺序)
-			//const target = randomSelection(modelList.models[modelId],modelTexturesId);
-			const target = switchSelection(modelList.models[modelId],modelTexturesId);
-			loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
-			showMessage("我的新衣服好看嘛？", 4000, 10);
+			// 随机选择
+			//const target = randomSelection(modelList.models[modelId]);
+			//loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
+			//if(Array.isArray(modelList.models[modelId]))showMessage("我的新衣服好看嘛？", 4000, 10);
+			//else showMessage("我还没有其他衣服呢！", 4000, 10);
+
+			//顺序选择
+			if(Array.isArray(modelList.models[modelId])){
+				const index = (++modelTexturesId >= modelList.models[modelId].length) ? 0 : modelTexturesId;
+				localStorage.setItem("modelTexturesId", index);
+				const target = idSelection(modelList.models[modelId],index);
+				loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
+				if(Array.isArray(modelList.models[modelId]))showMessage("我的新衣服好看嘛？", 4000, 10);
+			}
+			else showMessage("我还没有其他衣服呢！", 4000, 10);
+
+			//控制台打印模型材质id
+			console.log("模型ID:"+modelId);
+			console.log("材质ID:"+modelTexturesId);
 		} else {
 			// 可选 "rand"(随机), "switch"(顺序)
 			fetch(`${apiPath}switch_textures/?id=${modelId}-${modelTexturesId}`)
