@@ -48,6 +48,10 @@ function loadWidget(config) {
 		}
 	}
 	
+	function idSelection(obj,id) {
+		return Array.isArray(obj) ? obj[id] : obj;
+	}
+	
 	// 检测用户活动状态，并在空闲时显示消息
 	let userAction = false,
 		userActionTimer,
@@ -113,7 +117,7 @@ function loadWidget(config) {
 
 	(function welcomeMessage() {
 		let text;
-		if (location.pathname === "/lrplrplrp/") { // 如果是主页
+		if (location.pathname === "/lrplrplrp/") { // 如果是主页，可在浏览器后台输入location.pathname确定判断条件
 			const now = new Date().getHours();
 			if (now > 5 && now <= 7) text = ["早上好！一日之计在于晨，美好的一天就要开始了。","早啊，叫醒你的是理想还是闹钟呢。"];
 			else if (now > 7 && now <= 11) text = "上午好！工作顺利嘛，不要久坐，多起来走动走动哦！";
@@ -222,8 +226,9 @@ function loadWidget(config) {
 		showMessage(message, 4000, 10);
 		if (useCDN) {
 			if (!modelList) await loadModelList();
-			const target = randomSelection(modelList.models[modelId]);
+			const target = idSelection(modelList.models[modelId],modelTexturesId);
 			loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
+			console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`);
 		} else {
 			loadlive2d("live2d", `${apiPath}get/?id=${modelId}-${modelTexturesId}`);
 			console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`);
@@ -235,6 +240,8 @@ function loadWidget(config) {
 			modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (useCDN) {
 			if (!modelList) await loadModelList();
+			// 可选 "random"(随机), "switch"(顺序)
+			//const target = randomSelection(modelList.models[modelId],modelTexturesId);
 			const target = switchSelection(modelList.models[modelId],modelTexturesId);
 			loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
 			showMessage("我的新衣服好看嘛？", 4000, 10);
