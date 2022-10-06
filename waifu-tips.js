@@ -50,6 +50,7 @@ function loadWidget(config) {
 		messageArray = ["好久不见，时间过得好快呢……", "逝者如斯，不舍昼夜", "嗨～是在发呆吗", "如果觉得文章有用记得点个赞哦~"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
+	window.addEventListener("click", () => userAction = true);
 	setInterval(() => {
 		if (userAction) {
 			userAction = false;
@@ -134,13 +135,13 @@ function loadWidget(config) {
 
 	function showHitokoto() {
 		// 增加 hitokoto.cn 的 API
-		fetch("https://v1.hitokoto.cn")
+		fetch("https://v1.hitokoto.cn?c=k")
 			.then(response => response.json())
 			.then(result => {
 				const text = `这句一言来自 <span>「${result.from}」</span>，是 <span>${result.creator}</span> 在 hitokoto.cn 投稿的。`;
 				showMessage(result.hitokoto, 6000, 9);
 				setTimeout(() => {
-					showMessage(text, 4000, 9);
+					showMessage(text, 2000, 9);
 				}, 6000);
 			});
 	}
