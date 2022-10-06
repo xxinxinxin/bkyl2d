@@ -263,6 +263,9 @@
 	}, {
 		"selector": "a[title='复制代码']",
 		"text": ["点击可以直接复制代码哦~"]
+	}, {
+		"selector": "a[href='https://www.cnblogs.com/lrplrplrp/gallery.html']",
+		"text": ["要看看主人的相册吗？"]
 	}],
 	"click": [{
 		"selector": "#live2d",
