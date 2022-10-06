@@ -228,8 +228,8 @@ function loadWidget(config) {
 	}
 
 	async function loadRandModel() {
-		const modelId = localStorage.getItem("modelId"),
-			modelTexturesId = localStorage.getItem("modelTexturesId");
+		const modelId = localStorage.getItem("modelId");
+		let modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (useCDN) {
 			// 随机选择
 			//const target = randomSelection(modelList.models[modelId]);
