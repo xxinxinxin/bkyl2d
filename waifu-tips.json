@@ -174,7 +174,7 @@
 		"selector": ".vcontent",
 		"text": ["哇，快看看这个精彩评论！", "如果有疑问，请尽快留言哦～"]
 	}, {
-		"selector": "a[href^='/send/lrplrplrp']",
+		"selector": "a[href='https://msg.cnblogs.com/send/lrplrplrp']",
 		"text": ["要联系主人吗，他人超好的。"]
 	}, {
 		"selector": ".author_avatar",
@@ -254,6 +254,15 @@
 	}, {
 		"selector": ".set_btn fly_top fadeIn animated",
 		"text": ["点它就可以回到顶部啦！", "又回到最初的起点～", "要回到开始的地方么？"]
+	}, {
+		"selector": "a[href='#top']",
+		"text": ["点它就可以回到顶部啦！", "又回到最初的起点～", "要回到开始的地方么？"]
+	}, {
+		"selector": "a[href='#']",
+		"text": ["要刷新页面吗"]
+	}, {
+		"selector": "a[title='复制代码']",
+		"text": ["点击可以直接复制代码哦~"]
 	}],
 	"click": [{
 		"selector": "#live2d",
