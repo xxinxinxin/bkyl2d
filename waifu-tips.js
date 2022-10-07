@@ -47,7 +47,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["好久不见，时间过得好快呢……", "逝者如斯，不舍昼夜", "嗨～是在发呆吗", "如果觉得文章有用记得点个赞哦~"];
+		messageArray = ["长按鼠标后松开有惊喜哦~", "逝者如斯，不舍昼夜", "嗨～是在发呆吗", "如果觉得文章有用记得点个赞哦~"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	window.addEventListener("click", () => userAction = true);
