@@ -33,6 +33,7 @@ function loadWidget(config) {
 	// https://stackoverflow.com/questions/24148403/trigger-css-transition-on-appended-element
 	setTimeout(() => {
 		document.getElementById("waifu").style.bottom = 0;
+		if(localStorage.getItem("skin")==="furvous")document.getElementById("waifu-tips").style.color="white";
 	}, 0);
 
 	function randomSelection(obj) {
