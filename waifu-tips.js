@@ -34,6 +34,7 @@ function loadWidget(config) {
 	setTimeout(() => {
 		document.getElementById("waifu").style.bottom = 0;
 		if(localStorage.getItem("skin")==="furvous")document.getElementById("waifu-tips").style.color="white";
+		else document.getElementById("waifu-tips").style.color="black";
 	}, 0);
 
 	function randomSelection(obj) {
