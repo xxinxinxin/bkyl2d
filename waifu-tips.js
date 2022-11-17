@@ -108,7 +108,7 @@ function loadWidget(config) {
 			if (!document.hidden) showMessage(["哇，你终于回来了～","是想我了吗～"], 6000, 9);
 		});
 	})();
-
+ 
 	(function welcomeMessage() {
 		let text;
 		if (location.pathname === "/lrplrplrp/"||location.pathname === "/lrplrplrp") { // 如果是主页，可在浏览器后台输入location.pathname确定判断条件
